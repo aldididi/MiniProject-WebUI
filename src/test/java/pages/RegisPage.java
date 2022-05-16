@@ -18,6 +18,9 @@ public class RegisPage extends PageObject {
         return By.xpath("//*[@id=\"app\"]/div/main/div/div/div/div[1]");
         //tulisan register
     }
+    private By transactionText(){
+        return By.xpath("//*[@id=\"app\"]/div[1]/main/div/div/h1");
+    }
     private By regisButton(){
         return By.xpath("//*[@id=\"app\"]/div/main/div/div/div/div[2]/form/div[4]/button/span");
     }

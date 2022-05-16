@@ -7,6 +7,7 @@ import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
 //import org.aspectj.weaver.ast.Or;
 import pages.OrderPage;
+import pages.LoginPage;
 
 public class OrderSteps {
 
@@ -38,5 +39,23 @@ public class OrderSteps {
     @Then("direct to login page")
     public void directToLoginPage() {
         OrderPage.directToLoginPage();
+    }
+
+    @Steps
+    LoginPage loginPage;
+    @Given("Iam on login page")
+    public void iamOnLoginPage() {
+        loginPage.openUrl();
+        loginPage.validateOnLoginPage();
+    }
+
+    @Then("Directed to transaction page")
+    public void directedToTransactionPage() {
+        OrderPage.textTransaction();
+    }
+
+    @And("I click bayar")
+    public void iClickBayar() {
+        OrderPage.clickBayar();
     }
 }

@@ -14,12 +14,14 @@ public class OrderPage extends PageObject {
     private By cart(){
         return By.xpath("//*[@id=\"app\"]/div/header/div/button[1]/span");
     }
+
     private By buttonBayar(){
         return By.xpath("//*[@id=\"button-bayar\"]/span");
     }
     private By loginHeader(){
         return By.xpath("//*[@id=\"app\"]/div/main/div/div/div/div[1]");
     }
+    private By TransactionText(){ return By.xpath("//*[text()='Transactions']");}
 
     @Step
     public void openUrl(){
@@ -48,4 +50,5 @@ public class OrderPage extends PageObject {
    public boolean directToLoginPage(){
         return $(loginHeader()).isDisplayed();
    }
+   public boolean textTransaction(){return $(TransactionText()).isDisplayed();}
 }
