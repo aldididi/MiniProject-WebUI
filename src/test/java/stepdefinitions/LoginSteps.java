@@ -24,12 +24,12 @@ public class LoginSteps {
 
     @When("I input valid username")
     public void iInputValidUsername() {
-        loginPage.inputUsername("standard_user");
+        loginPage.inputUsername("didiw@email.com");
     }
 
     @And("I input valid password")
     public void iInputValidPassword() {
-        loginPage.inputPassword("secret_sauce");
+        loginPage.inputPassword("123123123");
     }
 
     @And("click login button")
@@ -42,15 +42,15 @@ public class LoginSteps {
         homePage.headerAppears();
         homePage.headerTextEqual();
     }
-
-    @When("I input protected username")
-    public void iInputProtectedUsername() {
-        loginPage.inputUsername("locked_out_user");
-    }
-
-    @Then("error message {string}")
-    public void errorMessage(String arg0) {
-        loginPage.errorMessageAppears();
-        loginPage.errorMessageEquals(arg0);
-    }
+//
+//    @When("I input protected username")
+//    public void iInputProtectedUsername() {
+//        loginPage.inputUsername("locked_out_user");
+//    }
+//
+//    @Then("error message {string}")
+//    public void errorMessage(String arg0) {
+//        loginPage.errorMessageAppears();
+//        loginPage.errorMessageEquals(arg0);
+//    }
 }

@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 public class HomePage extends PageObject {
 
     private By productHeader(){
-        return By.xpath("//*[@id=\"header_container\"]/div[2]/span");
+        return By.xpath("//*[@id=\"app\"]/div/main/div/div/div[1]/div/div[1]/div[1]");
     }
 
     @Step
@@ -16,6 +16,6 @@ public class HomePage extends PageObject {
 
     @Step
     public boolean headerTextEqual(){
-        return $(productHeader()).getText().equals("Products");
+        return $(productHeader()).getText().equals("Select category ...");
     }
 }

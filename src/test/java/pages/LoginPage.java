@@ -6,25 +6,26 @@ import org.openqa.selenium.By;
 
 public class LoginPage extends PageObject {
 
-    private By usernameField(){
-        return By.id("user-name");
+    private By emailField(){
+        return By.xpath("//*[@id=\"input-18\"]");
     }
 
     private By passwordField(){
-        return By.id("password");
+        return By.xpath("//*[@id=\"input-21\"]");
     }
 
     private By loginButton(){
-        return By.id("login-button");
+        return By.xpath("//*[@id=\"app\"]/div/main/div/div/div/div[2]/form/div[3]/button//span[text() = 'Login']");
     } //defini identifier element yang akan berinteraksi dengan automatenya
 
     private By errorMessage(){
-        return By.xpath("//*[@id=\"login_button_container\"]/div/form/div[3]/h3");
+        return By.xpath("//*[@id=\"app\"]/div/main/div/div/div/div[2]/div[1]/div/div[1]");
     }
 
     @Step
     public void openUrl(){
-        open();
+
+        openUrl("https://qa.alta.id/auth/login");
     }
 
     @Step
@@ -34,7 +35,7 @@ public class LoginPage extends PageObject {
 
     @Step
     public void inputUsername(String username){
-        $(usernameField()).type(username);
+        $(emailField()).type(username);
     }
 
     @Step

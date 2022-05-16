@@ -1,7 +1,7 @@
-Feature: Login
+Feature: Home
   As a user
-  I want to login
-  So that I can access my homepage
+  I want to go to web
+  So that I can se all products
 
   Scenario: As a user I have to be able to get list products
     Given I am on main page
