@@ -129,7 +129,7 @@
                 > <span class="truncate-40"><a
                     href="9d14a0af126d1517dc25c065db13f081b7d79df65ebbe3965863bcfd0993dfc6.html">Auth</a></span>
                 > <span class="truncate-60"><a
-                    href="caa9fe7cca258ea3c9be7b51355101af7ac0f59faaa9b6eeee52862d8612fd47.html">As a user I want to login </a></span>
+                    href="4b8c579622766ebf7ea77a2fa2856a42d72e2e6c9e845d0b5f7fcf07f2192211.html">Register account </a></span>
                 > Screenshots
             </span>
         </div>
@@ -151,7 +151,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-05-2022 14:41</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-05-2022 14:45</span>
     <br style="clear:left"/>
 </div>
 
@@ -188,9 +188,9 @@ So that I can buy products
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">As a user I want to login
+                                <span class="error-color">Register account
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -207,26 +207,51 @@ So that I can buy products
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">No such element exception: no such element: Unable to locate element: {'method':'css selector','selector':'#input\-128'}</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.NoSuchElementException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>pages.RegisPage.inputNamaLengkapRegist(RegisPage.java:39)<br />stepdefinitions.RegistSteps.iInputValidNamaLengkap(RegistSteps.java:31)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:57)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:95)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:58)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                <div class="panel-body">
+                    <a href="pagesource16227947995007396935.html" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="c78725a46454d89043b7baab9729fb3bccc56a79330c62ca5588127fe14236dd.png" title=" Given I am on the login page" width="2400"/>
-                <img src="c78725a46454d89043b7baab9729fb3bccc56a79330c62ca5588127fe14236dd.png" title=" Open url" width="2400"/>
-                <img src="c78725a46454d89043b7baab9729fb3bccc56a79330c62ca5588127fe14236dd.png" title=" Validate on login page" width="2400"/>
-                <img src="c78725a46454d89043b7baab9729fb3bccc56a79330c62ca5588127fe14236dd.png" title=" Validate on login page (completed)" width="2400"/>
-                <img src="c78725a46454d89043b7baab9729fb3bccc56a79330c62ca5588127fe14236dd.png" title=" Given I am on the login page (completed)" width="2400"/>
-                <img src="0a287f3aac1276b6342d8fa5920cce7fc8d29dc2c6c97e5865e201e3188a9cc1.png" title=" When I input valid username" width="2400"/>
-                <img src="0a287f3aac1276b6342d8fa5920cce7fc8d29dc2c6c97e5865e201e3188a9cc1.png" title=" Input username: didiw@email.com" width="2400"/>
-                <img src="0a287f3aac1276b6342d8fa5920cce7fc8d29dc2c6c97e5865e201e3188a9cc1.png" title=" When I input valid username (completed)" width="2400"/>
-                <img src="99a89384d52a3853bf787bb9a2a205cb7bbae56dec36b52e154f4c4c9f164882.png" title=" And I input valid password" width="2400"/>
-                <img src="99a89384d52a3853bf787bb9a2a205cb7bbae56dec36b52e154f4c4c9f164882.png" title=" Input password: 123123123" width="2400"/>
-                <img src="99a89384d52a3853bf787bb9a2a205cb7bbae56dec36b52e154f4c4c9f164882.png" title=" And I input valid password (completed)" width="2400"/>
-                <img src="32263703c1d1de6e732ae154e5f7116c5499ab3d72bf46a28b625f8408cbc085.png" title=" And click login button" width="2400"/>
-                <img src="32263703c1d1de6e732ae154e5f7116c5499ab3d72bf46a28b625f8408cbc085.png" title=" Click login button" width="2400"/>
-                <img src="32263703c1d1de6e732ae154e5f7116c5499ab3d72bf46a28b625f8408cbc085.png" title=" And click login button (completed)" width="2400"/>
-                <img src="32263703c1d1de6e732ae154e5f7116c5499ab3d72bf46a28b625f8408cbc085.png" title=" Then I go to home page" width="2400"/>
-                <img src="32263703c1d1de6e732ae154e5f7116c5499ab3d72bf46a28b625f8408cbc085.png" title=" Header appears" width="2400"/>
-                <img src="765262875007b93db0e2658fdcbe3228d658dd2082fc9605145b111be06a7e1d.png" title=" Header text equal" width="2400"/>
-                <img src="765262875007b93db0e2658fdcbe3228d658dd2082fc9605145b111be06a7e1d.png" title=" Then I go to home page (completed): <span class='success-color'>SUCCESS</span>" width="2400"/>
+                <img src="236600e4ccf7054cc3fc11e4136bad7d19373db094abccf5a98191e4c40212b0.png" title=" Given I am on the register page" width="2400"/>
+                <img src="236600e4ccf7054cc3fc11e4136bad7d19373db094abccf5a98191e4c40212b0.png" title=" Open url" width="2400"/>
+                <img src="236600e4ccf7054cc3fc11e4136bad7d19373db094abccf5a98191e4c40212b0.png" title=" Validate on regist page" width="2400"/>
+                <img src="236600e4ccf7054cc3fc11e4136bad7d19373db094abccf5a98191e4c40212b0.png" title=" Validate on regist page (completed)" width="2400"/>
+                <img src="236600e4ccf7054cc3fc11e4136bad7d19373db094abccf5a98191e4c40212b0.png" title=" Given I am on the register page (completed)" width="2400"/>
+                <img src="236600e4ccf7054cc3fc11e4136bad7d19373db094abccf5a98191e4c40212b0.png" title=" When I input valid nama lengkap" width="2400"/>
+                <img src="236600e4ccf7054cc3fc11e4136bad7d19373db094abccf5a98191e4c40212b0.png" title=" Input nama lengkap regist: aldidi ganteng: <span class='error-color'>ERROR</span>" width="2400"/>
             </div>
         </div>
 

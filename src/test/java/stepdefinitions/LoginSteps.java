@@ -42,6 +42,18 @@ public class LoginSteps {
         homePage.headerAppears();
         homePage.headerTextEqual();
     }
+
+    @When("I input invalid username")
+    public void iInputInvalidUsername() {
+        loginPage.inputUsername("lalalili@mail.com");
+    }
+
+    @Then("error message {string}")
+    public void errorMessage(String arg0) {
+        loginPage.errorMessageAppears();
+        loginPage.errorMessageEquals(arg0);
+    }
+
 //
 //    @When("I input protected username")
 //    public void iInputProtectedUsername() {

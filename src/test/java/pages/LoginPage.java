@@ -6,6 +6,9 @@ import org.openqa.selenium.By;
 
 public class LoginPage extends PageObject {
 
+    private By loginHeader(){
+        return By.xpath("//*[@id=\"app\"]/div/main/div/div/div/div[1]");
+    }
     private By emailField(){
         return By.xpath("//*[@id=\"input-18\"]");
     }
@@ -55,7 +58,20 @@ public class LoginPage extends PageObject {
 
     @Step
     public boolean errorMessageEquals(String text){
+
         return $(errorMessage()).getText().equals(text);
     }
 
+    @Step
+    public boolean headerloginAppear(){
+        return $(loginHeader()).isDisplayed();
+    }
+
+    @Step
+//    public boolean headerLoginTextAppear(strin){
+//        return $(loginHeader()).getText().equals(text);
+//    }
+    public boolean headerLoginTextEquals(String text){
+        return $(loginHeader()).getText().equals(text);
+    }
 }
