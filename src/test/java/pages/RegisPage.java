@@ -6,13 +6,13 @@ import org.openqa.selenium.By;
 
 public class RegisPage extends PageObject {
     private By namaLengkap(){
-        return By.id("input-128");
+        return By.xpath("//*[label[text()='Nama Lengkap']]/input");
     }
     private By emailRegis(){
-        return By.xpath("//*[@id=\"input-98\"]");
+        return By.xpath("//*[label[text()='Email']]/input");
     }
     private By passwordRegis(){
-        return By.xpath("//*[@id=\"input-101\"]");
+        return By.xpath("//*[label[text()='Password']]/input");
     }
     private By header(){
         return By.xpath("//*[@id=\"app\"]/div/main/div/div/div/div[1]");
