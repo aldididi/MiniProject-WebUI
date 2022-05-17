@@ -58,4 +58,9 @@ public class OrderSteps {
     public void iClickBayar() {
         OrderPage.clickBayar();
     }
+
+    @Then("I click reduce quantity")
+    public void iClickReduceQuantity() {
+        OrderPage.clickReduceQty();
+    }
 }

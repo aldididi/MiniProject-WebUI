@@ -16,6 +16,8 @@ public class LoginPage extends PageObject {
     private By passwordField(){
         return By.xpath("//*[@id=\"input-21\"]");
     }
+    private By iconAccount(){return By.xpath("//*[@id=\"app\"]/div[1]/header/div/button[2]/span");}
+    private By buttonLogout(){return By.xpath("//*[@id=\"list-item-1259\"]");}
 
     private By loginButton(){
         return By.xpath("//*[@id=\"app\"]/div/main/div/div/div/div[2]/form/div[3]/button//span[text() = 'Login']");
@@ -74,4 +76,8 @@ public class LoginPage extends PageObject {
     public boolean headerLoginTextEquals(String text){
         return $(loginHeader()).getText().equals(text);
     }
+
+    //logout
+    public void clickakun(){$(iconAccount()).click();}
+    public void clickLogout(){$(buttonLogout()).click();}
 }

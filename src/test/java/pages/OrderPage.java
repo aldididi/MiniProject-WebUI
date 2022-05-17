@@ -22,6 +22,7 @@ public class OrderPage extends PageObject {
         return By.xpath("//*[@id=\"app\"]/div/main/div/div/div/div[1]");
     }
     private By TransactionText(){ return By.xpath("//*[text()='Transactions']");}
+    private By reduceQty(){return By.xpath("//*/div[2]/button[1]//span[text() = '-']");}
 
     @Step
     public void openUrl(){
@@ -51,4 +52,6 @@ public class OrderPage extends PageObject {
         return $(loginHeader()).isDisplayed();
    }
    public boolean textTransaction(){return $(TransactionText()).isDisplayed();}
+
+    public void clickReduceQty(){$(reduceQty()).click();}
 }

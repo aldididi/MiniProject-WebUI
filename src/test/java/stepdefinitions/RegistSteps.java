@@ -28,7 +28,7 @@ public class RegistSteps {
 
     @When("I input valid nama lengkap")
     public void iInputValidNamaLengkap() {
-        regisPage.inputNamaLengkapRegist("aldidi ganteng");
+        regisPage.inputNamaLengkapRegist("aldidi");
     }
 
     @And("I inpput valid email")

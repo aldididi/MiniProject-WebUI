@@ -54,6 +54,16 @@ public class LoginSteps {
         loginPage.errorMessageEquals(arg0);
     }
 
+    @And("I click account icon")
+    public void iClickAccountIcon() {
+        loginPage.clickakun();
+    }
+
+    @Then("I click logout")
+    public void iClickLogout() {
+        loginPage.clickLogout();
+    }
+
 //
 //    @When("I input protected username")
 //    public void iInputProtectedUsername() {

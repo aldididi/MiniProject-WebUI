@@ -10,6 +10,15 @@ Feature: Auth
     And click login button
     Then I go to home page
 
+    Scenario: As a user I want to logout
+      Given I am on the login page
+      When I input valid username
+      And I input valid password
+      And click login button
+      And I go to home page
+#      And I click account icon
+#      Then I click logout
+
   Scenario: Failed login
     Given I am on the login page
     When I input invalid username
